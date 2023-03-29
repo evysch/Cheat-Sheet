@@ -1,0 +1,75 @@
+/* FONTS SECTION */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+
+/* UNIVERSAL SELECTOR */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Raleway;
+    color: #342A21;
+}
+
+/* HEADER SECTION */
+
+header {
+    width: 100%;
+    text-align: center;
+    background-color: #AAC0AA;
+    
+}
+
+header h1 {
+    padding: 15px;
+    font-size: 40px;
+}
+
+/* NAVIGATION SECTION */
+
+nav li {
+    display: inline-block;
+    padding: 5px;
+    width: 100px;
+    height: 20px;
+}
+
+nav li:hover {
+    background-color: #DCEED1;
+}
+
+/* BODY SECTION */
+
+body {
+    background-color: #E8EEF2;
+}
+
+/* TABLES SECTION */
+
+.tables {
+    margin: 50px 100px;
+}
+
+.tables h2 {
+    margin: 15px 0;
+}
+
+.tables h3 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.tables table {
+    background-color: #D6C9C9;
+    border: 1px solid #342A21;
+    border-collapse: collapse;
+}
+
+.tables table th {
+    padding: 10px;
+}
+
+.tables table td {
+    border: 1px solid #342A21;
+    padding: 10px;
+}
