@@ -11,12 +11,8 @@
     <h1>Cheat Sheet</h1>
     <nav>
       <ul>
-        <a href="#html-tables">
-          <li>HTML Tables</li>
-        </a>
-        <a href="#css">
-          <li>CSS</li>
-        </a>
+        <a href="#html-tables"><li>HTML Tables</li></a>
+        <a href="#css"><li>CSS</li></a>
       </ul>
     </nav>
   </header>
@@ -36,42 +32,45 @@
       </thead>
 
       <tbody>
-        <tr>
+        <tr class="tr-even">
           <td>&lt;table&gt;</td>
           <td>Table</td>
-          <td>The wrapper element for all HTML tables.</td>
+          <td class="description">The wrapper element for all HTML tables.</td>
         </tr>
-        <tr>
+        <tr class="tr-off">
           <td>&lt;thead&gt;</td>
           <td>Table Head</td>
-          <td>The set of rows defining the column headers in a table.</td>
+          <td class="description">The set of rows defining the column headers in a table.</td>
         </tr>
-        <tr>
+        <tr class="tr-even">
           <td>&lt;tbody&gt;</td>
           <td>Table Body</td>
-          <td>The set of rows containing actual table data.</td>
+          <td class="description">The set of rows containing actual table data.</td>
         </tr>
-        <tr>
+        <tr class="tr-off">
           <td>&lt;tfoot&gt;</td>
           <td>Table Foot</td>
-          <td>The set of rows defining the footer in a table.</td>
+          <td class="description">The set of rows defining the footer in a table.</td>
         </tr>
-        <tr>
+        <tr class="tr-even">
           <td>&lt;th&gt;</td>
           <td>Table Heading</td>
-          <td>Used to add titles to rows and columns.</td>
+          <td class="description">Used to add titles to rows and columns.</td>
         </tr>
-        <tr>
+        <tr class="tr-off">
           <td>&lt;tr&gt;</td>
           <td>Table Row</td>
-          <td>The table row container.</td>
+          <td class="description">The table row container.</td>
         </tr>
-        <tr>
+        <tr class="tr-even">
           <td>&lt;td&gt;</td>
           <td>Table Data</td>
-          <td>The table data container.</td>
+          <td class="description">The table data container.</td>
         </tr>
       </tbody>
+      <tfoot>
+        <tr></tr>
+      </tfooter>
     </table>
 
     <h3>Table Attributes</h3>
@@ -86,39 +85,43 @@
       </thead>
 
       <tbody>
-        <tr>
+        <tr class="tr-even">
           <td>colspan</td>
           <td>Column Span</td>
-          <td>Defines how many columns a td element should span.</td>
+          <td class="description">Defines how many columns a td element should span.</td>
         </tr>
-        <tr>
+        <tr class="tr-off">
           <td>rowspan</td>
           <td>Row Span</td>
-          <td>Defines how many rows a td element should span.</td>
+          <td class="description">Defines how many rows a td element should span.</td>
         </tr>
-        <tr>
+        <tr class="tr-even">
           <td>scope</td>
           <td>Scope</td>
-          <td>Attribute for th element. Makes it clear if the table heading is for a column or a row. Can take two
+          <td class="description">Attribute for th element. Makes it clear if the table heading is for a column or a row. Can take two
             values: col and row.</td>
         </tr>
       </tbody>
+      <tfoot>
+        <tr></tr>
+      </tfooter>
     </table>
   </section>
 
   <section class="css">
     <h2 id="css">CSS</h2>
     <h3>Display & Positioning</h3>
+    <div class="css-intro">
     <p>The following properties can be used to specify where an element is located on a page:</p>
     <br>
-    <ul>
+    <ul class="css-intro-list">
       <li>Position</li>
       <li>Display</li>
       <li>Z-index</li>
       <li>Float</li>
       <li>Clear</li>
     </ul>
-
+    </div>
     <section class="sub-section">
       <h4>Position</h4>
       <p>The default position of an element can be changed by setting its position property. The position property can
@@ -270,7 +273,8 @@
       <br>
       <ul>
         <li>left—the left side of the element will not touch any other element within the same containing element.</li>
-        <li>right—the right side of the element will not touch any other element within the same containing element.</li>
+        <li>right—the right side of the element will not touch any other element within the same containing element.
+        </li>
         <li>both—neither side of the element will touch any other element within the same containing element.</li>
         <li>none—the element can touch either side.</li>
       </ul>

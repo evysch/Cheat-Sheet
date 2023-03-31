@@ -16,7 +16,12 @@
 header {
     width: 100%;
     text-align: center;
-    background-color: #AAC0AA;
+    background-color: #C89F9C;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
 
 header h1 {
@@ -28,37 +33,48 @@ header h1 {
 
 nav li {
     display: inline-block;
-    padding: 5px;
-    width: 100px;
+    padding: 10px;
+    width: 150px;
     height: 20px;
 }
 
 nav li:hover {
-    background-color: #DCEED1;
+    background-color: #EEE2DF;
 }
 
 /* BODY SECTION */
 
 body {
-    background-color: #E8EEF2;
+    background-color: #EEE2DF;
 }
 
 /* SECTION SECTION */
 
+.tables, .css {
+    position: relative;
+    top: 80px;
+    margin-bottom: 150px;
+}
+
 section {
-    margin: 60px 100px;
+    margin: 60px 15%;
 }
 
 section h2 {
     margin-top: 40px;
     margin-bottom: 30px;
     font-size: 30px;
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid #342A21;
+    line-height: 70px;
 }
 
 section h3 {
-    margin-top: 30px;
-    margin-bottom: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
     font-size: 25px;
+    text-align: center;
 }
 
 section h4 {
@@ -84,21 +100,68 @@ section li {
 /* TABLES SECTION */
 
 .tables table {
-    background-color: #D6C9C9;
-    border: 1px solid #342A21;
+    background-color: #B36A5E;
+    border: 1px solid EEE2DF;
     border-collapse: collapse;
+    border-radius: 25px;
+    margin: 0 auto;
+    width: 75%;
+    overflow: scroll;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .tables table th {
-    padding: 10px;
+    padding: 15px;
+    color: #EEE2DF;
+    height: 40px;
 }
 
 .tables table td {
-    border: 1px solid #342A21;
-    padding: 10px;
+    /* border: 1px solid #EEE2DF; */
+    padding: 15px;
+    color: #EEE2DF;
+    /* border: 1px solid; */
+    text-align: center;
+}
+
+.description {
+    text-align: left !important;
+}
+
+tr {
+    height: 50px;
+}
+
+.tr-even {
+    background-color: #CFA29A;
+}
+
+.tr-off {
+    background-color: #D9B4AF;
+}
+
+tfoot tr {
+    height: 30px;
 }
 
 /* CSS SECTION */
+
+.css {
+    position: relative;
+    top: 0;
+}
+
+.css-intro {
+    text-align: center;
+}
+
+.css-intro-list {
+    list-style-position: inside;
+    display: inline-block;
+    text-align: left;
+    position: relative;
+    left: -30px;
+}
 
 .sub-section {
     margin: 0 40px;
