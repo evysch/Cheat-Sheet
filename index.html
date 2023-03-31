@@ -11,7 +11,9 @@
     <h1>Cheat Sheet</h1>
     <nav>
       <ul>
-        <a href="#html-tables"><li>HTML Tables</li></a>
+        <a href="#html-tables">
+          <li>HTML Tables</li>
+        </a>
         <a href="#css">
           <li>CSS</li>
         </a>
@@ -117,7 +119,7 @@
       <li>Clear</li>
     </ul>
 
-    <section class="position">
+    <section class="sub-section">
       <h4>Position</h4>
       <p>The default position of an element can be changed by setting its position property. The position property can
         take one of five values:</p>
@@ -157,7 +159,121 @@
         property is the default static.</p>
 
       <h5>Absolute</h5>
+      <p>
+        When an element’s position is set to absolute, all other elements on the page will ignore the element and act
+        like it is not present on the page. The element will be positioned relative to its closest positioned parent
+        element, while offset properties can be used to determine the final position from there.
+      </p>
 
+      <h5>Fixed</h5>
+      <p>
+        You can <span>fix</span> an element to a specific position on the page (regardless of user scrolling) by setting
+        its
+        position to fixed, and accompanying it with the familiar offset properties top, bottom, left, and right.
+      </p>
+
+      <h5>Sticky</h5>
+      <p>
+        The sticky value is another position value that keeps an element in the document flow as the user scrolls, but
+        <span>sticks</span> to a specified position as the page is scrolled further. This is done by using the sticky
+        value along
+        with the familiar offset properties, as well as one new one.
+      </p>
+
+    </section>
+
+    <section class="sub-section">
+      <h4>Display</h4>
+      <p>
+        Every HTML element has a default display value that dictates if it can share horizontal space with other
+        elements. Some elements fill the entire browser from left to right regardless of the size of their content.
+        Other elements only take up as much horizontal space as their content requires and can be directly next to other
+        elements. <br> <br>
+        There are three values for the display property:
+      </p>
+      <br>
+      <ul>
+        <li>Inline</li>
+        <li>Block</li>
+        <li>Inline-block</li>
+      </ul>
+      <br>
+      <p>
+        The default display for some elements, such as &lt;em&gt;, &lt;strong&gt;, and &lt;a&gt;, is called
+        <span>inline</span>. Inline elements have
+        a box that wraps tightly around their content, only taking up the amount of space necessary to display
+        their content and not requiring a new line after each element. The height and width of these elements
+        cannot be specified in the CSS document. For example, the text of an anchor tag (&lt;a&gt;) will, by default, be
+        displayed on the same line as the surrounding text, and it will only be as wide as necessary to contain
+        its content. inline elements cannot be altered in size with the height or width CSS properties.
+        <br>
+        <br>
+        The CSS display property provides the ability to make any element an inline element. This includes elements that
+        are not inline by default such as paragraphs, divs, and headings.
+      </p>
+
+      <h5>Display: Block</h5>
+      <p>
+        Some elements are not displayed in the same line as the content around them. These are called
+        <span>block-level</span>
+        elements. These elements fill the entire width of the page by default, but their width property can also be set.
+        Unless otherwise specified, they are the height necessary to accommodate their content.
+        <br>
+        <br>
+        Elements that are block-level by default include all levels of heading elements (&lt;h1&gt; through &lt;h6&gt;),
+        &lt;p&gt;,
+        &lt;div&gt; and &lt;footer&gt;.
+      </p>
+
+      <h5>Display: Inline-block</h5>
+      <p>
+        Inline-block display combines features of both inline and block elements. Inline-block elements can appear next
+        to each other and we can specify their dimensions using the width and height properties. Images are the best
+        example of default inline-block elements.
+      </p>
+
+    </section>
+
+    <section class="sub-section">
+      <h4>Float</h4>
+      <p>
+        The float property is commonly used for wrapping text around an image. Note, however, that moving elements left
+        or right for layout purposes is better suited for tools like CSS grid and flexbox.
+        <br>
+        <br>
+        The float property is often set using one of the values below:
+      </p>
+      <br>
+      <ul>
+        <li>left - moves, or floats, elements as far left as possible.</li>
+        <li>right - moves elements as far right as possible.</li>
+      </ul>
+      <br>
+      <p>
+        Floated elements must have a width specified, otherwise the element will assume the
+        full width of its containing element, and changing the float value will not yield any visible results.
+      </p>
+
+    </section>
+
+    <section class="sub-section">
+      <h4>Clear</h4>
+      <p>
+        The float property can also be used to float multiple elements at once. However, when multiple floated elements
+        have different heights, it can affect their layout on the page. Specifically, elements can “bump” into each
+        other and not allow other elements to properly move to the left or right.
+        <br>
+        <br>
+        The clear property specifies how elements should behave when they bump into each other on the page. It can take
+        on one of the following values:
+      </p>
+      <br>
+      <ul>
+        <li>left—the left side of the element will not touch any other element within the same containing element.</li>
+        <li>right—the right side of the element will not touch any other element within the same containing element.</li>
+        <li>both—neither side of the element will touch any other element within the same containing element.</li>
+        <li>none—the element can touch either side.</li>
+      </ul>
 
     </section>
 
