@@ -17,12 +17,11 @@ header {
     width: 100%;
     text-align: center;
     background-color: #AAC0AA;
-    
 }
 
 header h1 {
     padding: 15px;
-    font-size: 40px;
+    font-size: 45px;
 }
 
 /* NAVIGATION SECTION */
@@ -44,20 +43,44 @@ body {
     background-color: #E8EEF2;
 }
 
-/* TABLES SECTION */
+/* SECTION SECTION */
 
-.tables {
-    margin: 50px 100px;
+section {
+    margin: 60px 100px;
 }
 
-.tables h2 {
-    margin: 15px 0;
+section h2 {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 30px;
 }
 
-.tables h3 {
-    margin-top: 25px;
+section h3 {
+    margin-top: 30px;
     margin-bottom: 10px;
+    font-size: 25px;
 }
+
+section h4 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+section h5 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+section li {
+    position: relative;
+    left: 30px;
+    font-style: italic;
+}
+
+/* TABLES SECTION */
 
 .tables table {
     background-color: #D6C9C9;
@@ -73,3 +96,31 @@ body {
     border: 1px solid #342A21;
     padding: 10px;
 }
+
+/* CSS SECTION */
+
+.position {
+    margin: 0;
+    position: relative;
+    left: 40px;
+}
+
+.code-snippet {
+    white-space: pre;
+    font-family: monospace;
+    font-style: italic;
+    font-size: 15px;
+    color: #9E9E9E;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+span {
+    font-style: italic;
+    color: #9E9E9E;
+}
+
+
+

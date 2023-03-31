@@ -11,15 +11,19 @@
     <h1>Cheat Sheet</h1>
     <nav>
       <ul>
-        <a href=""><li>HTML Tables</li></a>
-        <a href=""><li>CSS</li></a>
+        <a href="#html-tables">
+          <li>HTML Tables</li>
+        </a>
+        <a href="#css">
+          <li>CSS</li>
+        </a>
       </ul>
     </nav>
   </header>
 
 
   <section class="tables">
-    <h2>HTML Tables</h2>
+    <h2 id="html-tables">HTML Tables</h2>
     <h3>Table Tags</h3>
 
     <table>
@@ -100,6 +104,56 @@
         </tr>
       </tbody>
     </table>
+  </section>
+
+  <section class="css">
+    <h2 id="css">CSS</h2>
+    <h3>Display & Positioning</h3>
+    <p>The following properties can be used to specify where an element is located on a page:</p>
+    <br>
+    <ul>
+      <li>Position</li>
+      <li>Display</li>
+      <li>Z-index</li>
+      <li>Float</li>
+      <li>Clear</li>
+    </ul>
+
+    <section class="position">
+      <h4>Position</h4>
+      <p>The default position of an element can be changed by setting its position property. The position property can
+        take one of five values:</p>
+      <br>
+      <ul>
+        <li>Static - the default value (does not need to be specified)</li>
+        <li>Relative</li>
+        <li>Absolute</li>
+        <li>Fixed</li>
+        <li>Sticky</li>
+      </ul>
+
+      <h5>Relative</h5>
+      <p>This value allows you to position an element /relative/ to its default static position on the web page.</p>
+      <br>
+      <p class="code-snippet">.green-box {
+        background-color: green;
+        position: relative;
+}
+      </p>
+      <p>
+        Although the code in the example above instructs the browser to expect a relative positioning of the .green-box element, it does not specify where the .green-box element should be positioned on the page. This is done by accompanying the position declaration with one or more of the following <span>offset properties</span> that will move the element away from its default static position:
+      </p>
+      <br>
+      <uL>
+        <li>top - moves the element down from the top.</li>
+        <li>bottom - moves the element up from the bottom.</li>
+        <li>left - moves the element away from the left side (to the right).</li>
+        <li>right - moves the element away from the right side (to the left).</li>
+      </uL>
+      <br>
+      <p>You can specify values in pixels, ems, or percentages, among others, to dial in exactly how far you need the element to move. It’s also important to note that offset properties will not work if the element’s position property is the default static.</p>
+    </section>
+
   </section>
 </body>
 
