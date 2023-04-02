@@ -28,7 +28,7 @@
         <tr>
           <th>Tag</th>
           <th>Name</th>
-          <th>Description</th>
+          <th class="description">Description</th>
         </tr>
       </thead>
 
@@ -71,7 +71,7 @@
       </tbody>
       <tfoot>
         <tr></tr>
-      </tfooter>
+        </tfooter>
     </table>
 
     <h3>Table Attributes</h3>
@@ -81,7 +81,7 @@
         <tr>
           <th>Attribute</th>
           <th>Name</th>
-          <th>Description</th>
+          <th class="description">Description</th>
         </tr>
       </thead>
 
@@ -99,13 +99,14 @@
         <tr class="tr-even">
           <td>scope</td>
           <td>Scope</td>
-          <td class="description">Attribute for th element. Makes it clear if the table heading is for a column or a row. Can take two
+          <td class="description">Attribute for th element. Makes it clear if the table heading is for a column or a
+            row. Can take two
             values: col and row.</td>
         </tr>
       </tbody>
       <tfoot>
         <tr></tr>
-      </tfooter>
+        </tfooter>
     </table>
   </section>
 
@@ -114,15 +115,15 @@
     <h2 id="css">CSS</h2>
     <h3>Display & Positioning</h3>
     <div class="css-intro">
-    <p>The following properties can be used to specify where an element is located on a page:</p>
-    <br>
-    <ul class="css-intro-list">
-      <li>Position</li>
-      <li>Display</li>
-      <li>Z-index</li>
-      <li>Float</li>
-      <li>Clear</li>
-    </ul>
+      <p>The following properties can be used to specify where an element is located on a page:</p>
+      <br>
+      <ul class="css-intro-list">
+        <li>Position</li>
+        <li>Display</li>
+        <li>Z-index</li>
+        <li>Float</li>
+        <li>Clear</li>
+      </ul>
     </div>
     <section class="sub-section">
       <h4>Position</h4>
@@ -136,54 +137,78 @@
         <li>Fixed</li>
         <li>Sticky</li>
       </ul>
-
-      <h5>Relative</h5>
-      <p>This value allows you to position an element /relative/ to its default static position on the web page.</p>
       <br>
-      <p class="code-snippet">.green-box {
-        background-color: green;
-        position: relative;
-        }
-      </p>
-      <p>
-        Although the code in the example above instructs the browser to expect a relative positioning of the .green-box
-        element, it does not specify where the .green-box element should be positioned on the page. This is done by
-        accompanying the position declaration with one or more of the following <span>offset properties</span> that will
-        move the element away from its default static position:
-      </p>
-      <br>
-      <uL>
-        <li>top - moves the element down from the top.</li>
-        <li>bottom - moves the element up from the bottom.</li>
-        <li>left - moves the element away from the left side (to the right).</li>
-        <li>right - moves the element away from the right side (to the left).</li>
-      </uL>
-      <br>
-      <p>You can specify values in pixels, ems, or percentages, among others, to dial in exactly how far you need the
-        element to move. It’s also important to note that offset properties will not work if the element’s position
-        property is the default static.</p>
 
-      <h5>Absolute</h5>
-      <p>
-        When an element’s position is set to absolute, all other elements on the page will ignore the element and act
-        like it is not present on the page. The element will be positioned relative to its closest positioned parent
-        element, while offset properties can be used to determine the final position from there.
-      </p>
+      <div class="card">
 
-      <h5>Fixed</h5>
-      <p>
-        You can <span>fix</span> an element to a specific position on the page (regardless of user scrolling) by setting
-        its
-        position to fixed, and accompanying it with the familiar offset properties top, bottom, left, and right.
-      </p>
+        <h5>Relative</h5>
+        <p>This value allows you to position an element <span>relative</span> to its default static position on the web
+          page.</p>
+        <br>
+        <p id="code-snippet">.green-box {
+          background-color: green;
+          position: relative;
+          }</p>
+        <p>
+          Although the code in the example above instructs the browser to expect a relative positioning of the
+          .green-box
+          element, it does not specify where the .green-box element should be positioned on the page. This is done by
+          accompanying the position declaration with one or more of the following <span>offset properties</span> that
+          will
+          move the element away from its default static position:
+        </p>
+        <br>
+        <uL>
+          <li>top - moves the element down from the top.</li>
+          <li>bottom - moves the element up from the bottom.</li>
+          <li>left - moves the element away from the left side (to the right).</li>
+          <li>right - moves the element away from the right side (to the left).</li>
+        </uL>
+        <br>
+        <p>You can specify values in pixels, ems, or percentages, among others, to dial in exactly how far you need the
+          element to move. It’s also important to note that offset properties will not work if the element’s position
+          property is the default static.
+        </p>
 
-      <h5>Sticky</h5>
-      <p>
-        The sticky value is another position value that keeps an element in the document flow as the user scrolls, but
-        <span>sticks</span> to a specified position as the page is scrolled further. This is done by using the sticky
-        value along
-        with the familiar offset properties, as well as one new one.
-      </p>
+      </div>
+
+
+      <div class="card">
+
+        <h5>Absolute</h5>
+        <p>
+          When an element’s position is set to absolute, all other elements on the page will ignore the element and act
+          like it is not present on the page. The element will be positioned relative to its closest positioned parent
+          element, while offset properties can be used to determine the final position from there.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <h5>Fixed</h5>
+        <p>
+          You can <span>fix</span> an element to a specific position on the page (regardless of user scrolling) by
+          setting
+          its
+          position to fixed, and accompanying it with the familiar offset properties top, bottom, left, and right.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <h5>Sticky</h5>
+        <p>
+          The sticky value is another position value that keeps an element in the document flow as the user scrolls, but
+          <span>sticks</span> to a specified position as the page is scrolled further. This is done by using the sticky
+          value along
+          with the familiar offset properties, as well as one new one.
+        </p>
+
+      </div>
 
     </section>
 
@@ -203,21 +228,30 @@
         <li>Inline-block</li>
       </ul>
       <br>
-      <p>
-        The default display for some elements, such as &lt;em&gt;, &lt;strong&gt;, and &lt;a&gt;, is called
-        <span>inline</span>. Inline elements have
-        a box that wraps tightly around their content, only taking up the amount of space necessary to display
-        their content and not requiring a new line after each element. The height and width of these elements
-        cannot be specified in the CSS document. For example, the text of an anchor tag (&lt;a&gt;) will, by default, be
-        displayed on the same line as the surrounding text, and it will only be as wide as necessary to contain
-        its content. inline elements cannot be altered in size with the height or width CSS properties.
-        <br>
-        <br>
-        The CSS display property provides the ability to make any element an inline element. This includes elements that
-        are not inline by default such as paragraphs, divs, and headings.
-      </p>
 
-      <h5>Display: Block</h5>
+      <div class="card">
+        <h5>Inline</h5>
+        <p>
+          The default display for some elements, such as &lt;em&gt;, &lt;strong&gt;, and &lt;a&gt;, is called
+          <span>inline</span>. Inline elements have
+          a box that wraps tightly around their content, only taking up the amount of space necessary to display
+          their content and not requiring a new line after each element. The height and width of these elements
+          cannot be specified in the CSS document. For example, the text of an anchor tag (&lt;a&gt;) will, by default,
+          be
+          displayed on the same line as the surrounding text, and it will only be as wide as necessary to contain
+          its content. inline elements cannot be altered in size with the height or width CSS properties.
+          <br>
+          <br>
+          The CSS display property provides the ability to make any element an inline element. This includes elements
+          that
+          are not inline by default such as paragraphs, divs, and headings.
+        </p>
+
+      </div>
+
+      <div class="card">
+
+      <h5>Block</h5>
       <p>
         Some elements are not displayed in the same line as the content around them. These are called
         <span>block-level</span>
@@ -230,12 +264,18 @@
         &lt;div&gt; and &lt;footer&gt;.
       </p>
 
-      <h5>Display: Inline-block</h5>
+      </div>
+
+      <div class="card">
+
+      <h5>Inline-block</h5>
       <p>
         Inline-block display combines features of both inline and block elements. Inline-block elements can appear next
         to each other and we can specify their dimensions using the width and height properties. Images are the best
         example of default inline-block elements.
       </p>
+
+      </div>
 
     </section>
 
