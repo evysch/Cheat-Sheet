@@ -27,6 +27,7 @@ header {
 header h1 {
     padding: 15px;
     font-size: 45px;
+    
 }
 
 /* NAVIGATION SECTION */
@@ -40,6 +41,12 @@ nav li {
 
 nav li:hover {
     background-color: #EEE2DF;
+    transition: .3s all;
+}
+
+.html-tables, .css-section {
+    position: absolute;
+    transform: translateY(-15vh);
 }
 
 /* BODY SECTION */
